@@ -1,11 +1,11 @@
+// import Routes from './routes';
+
 const express = require('express');
 const config = require('config');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const responseHelper = require('./helpers/responseHelper');
 const expressBoom = require('./middlewares/Boom');
-// const Routes = require('./routes');
-
 // create express app
 const app = express();
 

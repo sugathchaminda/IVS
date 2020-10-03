@@ -1,6 +1,3 @@
-// import responseHelper from '../../helpers/responseHelper';
-// import Router from '../../core/Router';
-// import responseMessages from '../../constants/response';
 const responseHelper = require('../../helpers/responseHelper');
 const Router = require('../../core/Router');
 const responseMessages = require('../../constants/response');
