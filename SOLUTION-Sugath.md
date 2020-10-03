@@ -9,9 +9,9 @@ http://54.85.207.10:4000/echo
 https://github.com/sugathchaminda/IVS.git
 
 ## Testers Read Only Account Credentials
-### Account Login URL - https://738665750289.signin.aws.amazon.com/console
-### User Name - IVSReadOnlyUser
-### Password - psalm54v2#
+* Account Login URL - https://738665750289.signin.aws.amazon.com/console
+* User Name - IVSReadOnlyUser
+* Password - psalm54v2#
 
 ## Set Up Instructions
 ### Local Set Up
@@ -127,4 +127,8 @@ https://github.com/sugathchaminda/IVS.git
     - Note : if you configured it with port 80 you dont need to define the port
 
 ## Improvements
-    - Use the cloudformation template    
+    - Use the cloudformation template
+
+## Note -
+* As this does not have a much logic, I have not seperated the logic. app.js file have everything. But I have included the flow with controllers. For a example if you uncomment the line no 1,  44  
+adn ran the application again, it will run the app with controller logic. Then  'http://localhost:4000/api/v1/echo' this endpoint can access.
