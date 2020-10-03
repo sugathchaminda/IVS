@@ -1,0 +1,24 @@
+{
+    "family": "nodejs-fargate-task",
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::738665750289:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "nodejs-app",
+            "image": "738665750289.dkr.ecr.us-east-1.amazonaws.com/docker-on-aws/nodejs:latest",
+            "portMappings": [
+                {
+                    "containerPort": 4000,
+                    "hostPort": 4000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+}
